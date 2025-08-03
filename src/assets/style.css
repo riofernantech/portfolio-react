@@ -206,6 +206,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 /* Make the body a nice central block */
 #root {
     color: var(--color-txt);
