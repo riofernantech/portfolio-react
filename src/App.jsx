@@ -1,15 +1,22 @@
 import { useState } from 'react'
+import { PageContext } from './Context/PageContext';
 import Header from './Header/Header'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState();
+
+  function handlePageChange(newPage) {
+    setPage(newPage);
+  }
 
   return (
     <>
-      <Header/>
-      <Main />
+      <PageContext.Provider value={handlePageChange}>
+        <Header/>
+      </PageContext.Provider>
+      <Main page={page}/>
       <Footer/>
     </>
   )
