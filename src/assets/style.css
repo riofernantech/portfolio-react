@@ -209,6 +209,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    background: var(--color-bg);
 }
 
 /* Make the body a nice central block */
@@ -1648,7 +1649,7 @@ not found page content
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    display: none;
+    display: flex;
     /* Hide by default */
     justify-content: center;
     align-items: center;

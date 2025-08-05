@@ -7,7 +7,7 @@ export default function Skill(){
     return (
         <>
             <Title />
-            <div class="skill-container">
+            <div className="skill-container">
                 <Programming />
                 <Technologies />
                 <Certificates />

@@ -25,7 +25,7 @@ export default function Main({page}){
 
     return (
         <main id="main">
-            {content || <Home/>} 
+            {content} 
         </main>
     )
 }
