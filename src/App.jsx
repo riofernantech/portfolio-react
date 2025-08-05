@@ -5,9 +5,18 @@ import Header from './Header/Header';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
-function App() {
+function calculateInitialTheme() {
+  const localTheme = localStorage.getItem("theme");
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (localTheme) return localTheme;
+  if (prefersDark) return "dark";
+  return "light";
+}
+
+export default function App() {
   const [page, setPage] = useState('home');
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => calculateInitialTheme());
 
   const handlePageChange = (newPage) => setPage(newPage);
 
@@ -16,6 +25,7 @@ function App() {
   };
 
   useEffect(() => {
+    localStorage.setItem("theme", theme);
     document.body.setAttribute("data-theme", theme);
   }, [theme]);
 
@@ -32,4 +42,3 @@ function App() {
   )
 }
 
-export default App
