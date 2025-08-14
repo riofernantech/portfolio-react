@@ -8,6 +8,8 @@
     --color-btn-bg: #f5f7ff;
     --color-preformatted: #444;
     --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-navlink: #0d47a1;
+    --color-bg-navlink: #fff;
 }
 
 [data-theme="dark"] {
@@ -20,6 +22,8 @@
     --color-btn-bg: #2b2b2b;
     --color-preformatted: #ccc;
     --color-shadow: rgba(0, 0, 0, 0);
+    --color-navlink: #ffb03b;
+    --color-bg-navlink: #2b2b2b;
 }
 
 /* Global variables. */
@@ -438,7 +442,10 @@ nav a:last-child {
     margin-right: 0;
 }
 
-nav a.active {}
+nav a.active {
+    border-color: #ffb03b;
+    background-color: var(--color-bg-navlink);
+}
 
 /* Title Navbar */
 /* 
@@ -697,6 +704,7 @@ hr {
     border-top: 1px;
     margin: 1rem auto;
     border-color: var(--color-txt);
+    width: 100%;
 }
 
 mark {

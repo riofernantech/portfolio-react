@@ -4,6 +4,7 @@ import { ThemeContext } from './Context/ThemeContext';
 import { NavLink, Outlet } from "react-router";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import Main from './Main/Main';
 
 function calculateInitialTheme() {
   const localTheme = localStorage.getItem("theme");
@@ -32,7 +33,9 @@ export default function App() {
         <PageContext.Provider value={NavLink}>
           <Header/>
         </PageContext.Provider>
-        <Outlet/>
+        <Main>
+          <Outlet/>  
+        </Main>
         <Footer/>
       </ThemeContext.Provider>
     </>
