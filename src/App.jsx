@@ -1,8 +1,8 @@
 import { useState, useEffect} from 'react';
 import { PageContext } from './Context/PageContext';
 import { ThemeContext } from './Context/ThemeContext';
+import { NavLink, Outlet } from "react-router";
 import Header from './Header/Header';
-import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
 function calculateInitialTheme() {
@@ -15,10 +15,7 @@ function calculateInitialTheme() {
 }
 
 export default function App() {
-  const [page, setPage] = useState('home');
   const [theme, setTheme] = useState(() => calculateInitialTheme());
-
-  const handlePageChange = (newPage) => setPage(newPage);
 
   const handleThemeChange = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
@@ -32,10 +29,10 @@ export default function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, handleThemeChange }}>
-        <PageContext.Provider value={handlePageChange}>
+        <PageContext.Provider value={NavLink}>
           <Header/>
         </PageContext.Provider>
-        <Main page={page}/>
+        <Outlet/>
         <Footer/>
       </ThemeContext.Provider>
     </>
