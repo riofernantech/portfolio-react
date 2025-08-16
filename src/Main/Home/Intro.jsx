@@ -4,8 +4,7 @@ import { useContext } from "react"
 export default function Intro(){
     const { theme } = useContext(ThemeContext);
 
-    const resumeSvgColor = theme === 'light' ? "#000000" : "white";
-    const emailSvgColor = theme === 'light' ? "#000000" : "white";
+    const svgColor = theme === 'light' ? "#000000" : "white";
 
     return (
         <>
@@ -21,7 +20,7 @@ export default function Intro(){
             <div className="resume">
                 <a href="">
                     <div className="cv">
-                        <svg className="dark-icon" fill={resumeSvgColor} width="25px" height="25px" viewBox="0 0 32 32" dataName="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg">
+                        <svg className="dark-icon" fill={svgColor} width="25px" height="25px" viewBox="0 0 32 32" dataName="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg">
                             <rect height="1" width="12" x="10" y="29" />
                             <rect height="1" width="12" x="10" y="2" />
                             <rect height="1" width="9" x="13" y="20" />
@@ -45,8 +44,8 @@ export default function Intro(){
                 <a href="">
                     <div className="email">
                         <svg className="dark-icon" width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke={emailSvgColor} strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
-                            <rect x="3" y="5" width="18" height="14" rx="2" stroke={emailSvgColor} strokeWidth="1" strokeLinecap="round" />
+                            <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke={svgColor} strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
+                            <rect x="3" y="5" width="18" height="14" rx="2" stroke={svgColor} strokeWidth="1" strokeLinecap="round" />
                         </svg>
                         Send Email
                     </div>

@@ -6,6 +6,7 @@ import Home from './Main/Home/Home.jsx'
 import Project from './Main/Project/Project.jsx'
 import Blog from './Main/Blog/Blog.jsx'
 import Contact from './Main/Contact/Contact.jsx'
+import NotFound from './Main/NotFound/NotFound.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,12 +14,11 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path="/" element={<App />}>
               <Route index element={<Home/>}/>
-              <Route path="intro" element={<Home/>}/>
               <Route path="project" element={<Project/>}/>
               <Route path="blog" element={<Blog/>}/>
               <Route path="contact" element={<Contact/>}/>
+              <Route path="/*" element={<NotFound/>}/>
             </Route>
-            {/* <Route path="/*" element={<NotFound/>}/> */}
           </Routes>
       </BrowserRouter>
   </StrictMode>,

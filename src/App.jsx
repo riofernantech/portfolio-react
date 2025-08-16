@@ -32,11 +32,11 @@ export default function App() {
       <ThemeContext.Provider value={{ theme, handleThemeChange }}>
         <PageContext.Provider value={NavLink}>
           <Header/>
+          <Main>
+            <Outlet/>  
+          </Main>
+          <Footer/>
         </PageContext.Provider>
-        <Main>
-          <Outlet/>  
-        </Main>
-        <Footer/>
       </ThemeContext.Provider>
     </>
   )
