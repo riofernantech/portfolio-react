@@ -7,7 +7,7 @@ export default function GithubIcon(){
     const svgColor = theme === 'light' ? "#000000" : "white";
     
     return (
-        <a className="icon-nav-github" href="">
+        <a className="icon-nav-github" href="https://github.com/riofernantech">
             <svg className="dark-icon" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill={svgColor}>
