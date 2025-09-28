@@ -62,7 +62,7 @@ function More(){
                 <a className="sertif-link" href="https://www.dicoding.com/certificates/JLX19VW8GP72">View Certificate</a>
             </div>
             <div className="sertif-items">
-                <div className="sertif-title">JavaScript Backend</div>
+                <div className="sertif-title">Javascript Backend</div>
                 <div className="sertif-platform">Dicoding Indonesia</div>
                 <div className="sertif-date">February 27, 2025</div>
                 <a className="sertif-link" href="https://www.dicoding.com/certificates/6RPNRR9O8X2M">View Certificate</a>
