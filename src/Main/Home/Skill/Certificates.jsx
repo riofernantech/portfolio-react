@@ -19,7 +19,7 @@ export default function Certificates() {
           <div className="sertif-title">Javascript Fundamental</div>
           <div className="sertif-platform">Dicoding Indonesia</div>
           <div className="sertif-date">July 31, 2023</div>
-          <a className="sertif-link" href="lihat">View Certificate</a>
+          <a className="sertif-link" href="https://www.dicoding.com/certificates/07Z6VE8MMXQR">View Certificate</a>
         </div>
 
         {show && <More/>}
@@ -46,22 +46,27 @@ function Button({ title, onClick, show }) {
   );
 }
 
-
 function More(){
     return (
         <>  
             <div className="sertif-items">
-                    <div className="sertif-title">Javascript Fundamental</div>
-                    <div className="sertif-platform">Dicoding Indonesia</div>
-                    <div className="sertif-date">July 31, 2023</div>
-                    <a className="sertif-link" href="lihat">View Certificate</a>
-                </div>
+                <div className="sertif-title">Computer Network Fundamental</div>
+                <div className="sertif-platform">Dicoding Indonesia</div>
+                <div className="sertif-date">Januray 29, 2025</div>
+                <a className="sertif-link" href="https://www.dicoding.com/certificates/98XWE4L14XM3">View Certificate</a>
+            </div>
             <div className="sertif-items">
-                    <div className="sertif-title">Javascript Fundamental</div>
-                    <div className="sertif-platform">Dicoding Indonesia</div>
-                    <div className="sertif-date">July 31, 2023</div>
-                    <a className="sertif-link" href="lihat">View Certificate</a>
-                </div>
+                <div className="sertif-title">AWS Cloud Fundamental</div>
+                <div className="sertif-platform">Dicoding Indonesia</div>
+                <div className="sertif-date">February 28, 2025</div>
+                <a className="sertif-link" href="https://www.dicoding.com/certificates/JLX19VW8GP72">View Certificate</a>
+            </div>
+            <div className="sertif-items">
+                <div className="sertif-title">JavaScript Backend</div>
+                <div className="sertif-platform">Dicoding Indonesia</div>
+                <div className="sertif-date">February 27, 2025</div>
+                <a className="sertif-link" href="https://www.dicoding.com/certificates/6RPNRR9O8X2M">View Certificate</a>
+            </div>
         </>
     )
 }
