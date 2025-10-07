@@ -8,6 +8,8 @@ import Blog from './Main/Blog/Blog.jsx'
 import Contact from './Main/Contact/Contact.jsx'
 import NotFound from './Main/NotFound/NotFound.jsx';
 
+import './assets/style.css'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>

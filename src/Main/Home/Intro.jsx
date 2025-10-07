@@ -18,7 +18,7 @@ export default function Intro(){
             <br />
 
             <div className="resume">
-                <a href="">
+                <a href="https://riofernando.cloud/resume/Rio-Surya-Fernando-Resume.pdf" target="_blank" rel="noreferrer">
                     <div className="cv">
                         <svg className="dark-icon" fill={svgColor} width="25px" height="25px" viewBox="0 0 32 32" dataName="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg">
                             <rect height="1" width="12" x="10" y="29" />
