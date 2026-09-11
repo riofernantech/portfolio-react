@@ -1,0 +1,59 @@
+import {
+    PhpIcon,
+    JavaIcon,
+    JavaScriptIcon,
+    TypeScriptIcon,
+    GoIcon,
+    SqlIcon,
+    HtmlIcon,
+    CssIcon,
+    LaravelIcon,
+    CodeIgniterIcon,
+    ReactIcon,
+    VueIcon,
+    NodeIcon,
+    ExpressIcon,
+    ElectronIcon,
+    HapiIcon,
+    BootstrapIcon,
+    LinuxIcon,
+    ApacheIcon,
+    NginxIcon,
+    MySqlIcon,
+    GitHubIcon,
+    GitIcon,
+    MikroTikIcon,
+} from './icons/SkillIcons';
+
+export const programmingSkills = [
+    { label: 'PHP', Icon: PhpIcon },
+    { label: 'Java', Icon: JavaIcon },
+    { label: 'Javascript', Icon: JavaScriptIcon },
+    { label: 'Typescript', Icon: TypeScriptIcon },
+    { label: 'Golang', Icon: GoIcon },
+    { label: 'SQL', Icon: SqlIcon },
+    { label: 'Html', Icon: HtmlIcon },
+    { label: 'Css', Icon: CssIcon },
+];
+
+export const frameworkSkills = [
+    { label: 'Laravel', Icon: LaravelIcon },
+    { label: 'Codeigniter', Icon: CodeIgniterIcon },
+    { label: 'React JS', Icon: ReactIcon },
+    { label: 'Vue JS', Icon: VueIcon },
+    { label: 'Node Js', Icon: NodeIcon },
+    { label: 'Express JS', Icon: ExpressIcon },
+    { label: 'Electron JS', Icon: ElectronIcon },
+    { label: 'Hapi Js', Icon: HapiIcon },
+    { label: 'Bootstrapp', Icon: BootstrapIcon },
+];
+
+export const technologySkills = [
+    { label: 'Linux Server', Icon: LinuxIcon },
+    { label: 'Apache', Icon: ApacheIcon },
+    { label: 'Nginx', Icon: NginxIcon },
+    { label: 'SQLite', Icon: MySqlIcon },
+    { label: 'Github', Icon: GitHubIcon },
+    { label: 'Git', Icon: GitIcon },
+    { label: 'MikroTik', Icon: MikroTikIcon },
+];
