@@ -1,4 +1,8 @@
+import { useDocumentTitle } from '../../Hooks/useDocumentTitle';
+
 export default function Blog(){
+    useDocumentTitle('Blog | RioFernando');
+    
     return (
         <>  
             <h3>

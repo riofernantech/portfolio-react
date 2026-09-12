@@ -23,6 +23,8 @@ import {
     GitHubIcon,
     GitIcon,
     MikroTikIcon,
+    SqliteIcon,
+    RedisIcon,
 } from './icons/SkillIcons';
 
 export const programmingSkills = [
@@ -41,10 +43,10 @@ export const frameworkSkills = [
     { label: 'Codeigniter', Icon: CodeIgniterIcon },
     { label: 'React JS', Icon: ReactIcon },
     { label: 'Vue JS', Icon: VueIcon },
-    { label: 'Node Js', Icon: NodeIcon },
+    { label: 'Node JS', Icon: NodeIcon },
     { label: 'Express JS', Icon: ExpressIcon },
     { label: 'Electron JS', Icon: ElectronIcon },
-    { label: 'Hapi Js', Icon: HapiIcon },
+    { label: 'Hapi JS', Icon: HapiIcon },
     { label: 'Bootstrapp', Icon: BootstrapIcon },
 ];
 
@@ -52,7 +54,9 @@ export const technologySkills = [
     { label: 'Linux Server', Icon: LinuxIcon },
     { label: 'Apache', Icon: ApacheIcon },
     { label: 'Nginx', Icon: NginxIcon },
-    { label: 'SQLite', Icon: MySqlIcon },
+    { label: 'MySql', Icon: MySqlIcon },
+    { label: 'Sqlite', Icon: SqliteIcon },
+    { label: 'Redis', Icon: RedisIcon },
     { label: 'Github', Icon: GitHubIcon },
     { label: 'Git', Icon: GitIcon },
     { label: 'MikroTik', Icon: MikroTikIcon },

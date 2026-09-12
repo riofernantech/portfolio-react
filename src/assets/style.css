@@ -1704,9 +1704,9 @@ span#certifBtn {
 /* Close button */
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 26px;
+    top: -7px;
+    right: -2px;
+    font-size: 35px;
     font-weight: bold;
     color: #333;
     cursor: pointer;

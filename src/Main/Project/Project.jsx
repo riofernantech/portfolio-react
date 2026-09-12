@@ -1,6 +1,9 @@
 import GithubIcon from "./GithubIcon"
+import { useDocumentTitle } from '../../Hooks/useDocumentTitle';
 
 export default function Project(){
+    useDocumentTitle('Projects | RioFernando');
+    
     return (
         <>  
             <div className="projects-title">
