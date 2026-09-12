@@ -1,13 +1,12 @@
-import { ThemeContext } from "../../Context/ThemeContext"
-import { useContext } from 'react'
+import { useTheme } from "../../Context/ThemeContext"
 
 export default function ThemeButton(){
 
-    const { theme, handleThemeChange } = useContext(ThemeContext);
+    const { theme, toggleTheme } = useTheme();
     
     function handleClick(event) {
         event.preventDefault(); 
-        handleThemeChange();
+        toggleTheme()
     }
 
     let svg = null;
