@@ -1,8 +1,7 @@
-import { ThemeContext } from "../../Context/ThemeContext"
-import { useContext } from 'react'
+import { useTheme } from "../../Context/ThemeContext"
 
 export default function GithubIcon(){
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useTheme();
 
     const svgColor = theme === 'light' ? "#000000" : "white";
     

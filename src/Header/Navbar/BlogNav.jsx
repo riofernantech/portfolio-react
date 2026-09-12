@@ -1,10 +1,8 @@
-import { PageContext } from "../../Context/PageContext"
-import { ThemeContext } from "../../Context/ThemeContext"
-import { useContext } from 'react'
+import { NavLink } from "react-router";
+import { useTheme } from "../../Context/ThemeContext"
 
 export default function BlogNav(){
-    const NavLink = useContext(PageContext);
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useTheme();
 
     const svgColor = theme === 'light' ? "#000000" : "white";
     

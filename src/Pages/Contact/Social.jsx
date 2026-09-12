@@ -41,7 +41,7 @@ export default function Social(){
                         <div className="empty"></div>
                     </div>
                 </a>
-                <a data-aos="fade-up" className="link" href="https://www.instagram.com/rio_fernando_13/">
+                <a data-aos="fade-up" className="link" href="https://www.instagram.com/rio.fernand0/">
                     <div className="link-box">
                         <svg className="thumb" width="20px" height="20px" viewBox="0 0 2500 2500" xmlns="http://www.w3.org/2000/svg">
                             <defs>

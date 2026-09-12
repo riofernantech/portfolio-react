@@ -1,8 +1,7 @@
-import { ThemeContext } from "../../Context/ThemeContext"
-import { useContext } from 'react'
+import { useTheme } from "../../Context/ThemeContext"
 
 export default function LinkedinIcon(){
-    const { theme } = useContext(ThemeContext);
+    const { theme } = useTheme();
 
     const svgColor = theme === 'light' ? "#0A66C2" : "#FFFFFF";
     

@@ -1,10 +1,8 @@
-import { PageContext } from "../../Context/PageContext"
-import { useContext } from 'react'
+import { NavLink } from "react-router";
 import { useDocumentTitle } from '../../Hooks/useDocumentTitle';
 
 export default function NotFound(){
     useDocumentTitle('404 Not Found | RioFernando');
-    const NavLink = useContext(PageContext);
 
     return (
         <div id="notfound">

@@ -1,20 +1,17 @@
-import { PageContext } from './Context/PageContext';
 import { ThemeProvider } from './Context/ThemeContext';
-import { NavLink, Outlet } from "react-router";
+import { Outlet } from "react-router";
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import Main from './Main/Main';
+import Page from './Pages/Index';
 
 export default function App() {
   return (
     <ThemeProvider>
-      <PageContext.Provider value={NavLink}>
         <Header/>
-        <Main>
+        <Page>
           <Outlet/>
-        </Main>
+        </Page>
         <Footer/>
-      </PageContext.Provider>
     </ThemeProvider>
   );
 }
